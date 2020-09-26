@@ -3,8 +3,11 @@ import Context from "../Context";
 import "./Landing.css"
 
 export default function Landing (props){
+  //state to keep track of the input textfield
   const [input, setInput] = useState();
   const context = useContext(Context);
+  //update function to be called when the value of input textfield changes
+  //it keeps track of the value of the input textfield as the user types
   const updateInput = (event)=>{
     setInput(event.target.value);
   }

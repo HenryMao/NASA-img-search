@@ -9,10 +9,13 @@ import Searching from "./components/Searching"
 
 
 function App() {
-  const [searchStr, setSearchStr] = useState();
+  //state to keep track of search results
   const [results, setResults] = useState();
+  //state to keep track of whether the results should be displayed
   const [resultsDis, setResultsDis] = useState(false);
+  //state to keep track of whether the fetching indicator should be displayed
   const [fetching, setFetching] = useState(false);
+  //search function to be called when the search form is submitted
   const searchFunc = (str)=>{
     setFetching(true);
     Axios.get(`https://images-api.nasa.gov/search?q=${str}`)
