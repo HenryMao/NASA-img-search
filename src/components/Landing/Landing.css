@@ -1,0 +1,14 @@
+.SearchButton{
+  margin: 10px;
+  border-radius: 8px;
+}
+.SearchInput{
+  height:20px;
+  width: 20%;
+}
+.Landing{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

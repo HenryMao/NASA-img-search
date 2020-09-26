@@ -5,9 +5,9 @@ export default function Pic (props){
   return(
     <div className="picCon">
       <img className="pic"src={props.result.links[0].href}/>
-      <p>
+      <h5>
         {props.result.data[0].title}
-      </p>
+      </h5>
       {/* <p>
         {props.result.data ? props.result.data[0].description : null}
       </p> */}

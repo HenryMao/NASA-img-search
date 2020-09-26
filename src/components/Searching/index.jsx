@@ -1,9 +1,11 @@
 import React from "react";
-
+import "./Searching.css"
 export default function Searching (props){
-  return (  
-    <span>
-      Fetching images
-    </span>)
-
+  return (
+    <div className="fetching">
+      <h3>
+        Fetching images...
+      </h3>
+    </div>
+  ) 
 }
